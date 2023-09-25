@@ -1,6 +1,6 @@
 # TP FullStack
 
-### Cómo instalarlo
+## Cómo instalarlo
 
 - Clonar el respositorio
 - Abrir la consola y ejecutar ```npm install```
@@ -8,9 +8,9 @@
 - Lanzar el servidor con ```npm index.js```
 
 
-### Login
+## Login
 
-*Metodo POST
+**Metodo POST**
 
 ```auth/login```
 
@@ -25,38 +25,38 @@ En el body:
 El login devuelve un token que se deberá utilizar para acceder a algunos métodos de la API. 
 Recomiendo copiar este token y pegarlo en la parte de "Authorization" de postman, seleccionando "Bearer Token" como type y luego pegando el token sin las comillas.
 
-### Metodos GET
+## Metodos GET
 
-*A todos los metodos GET que devuelven un array de datos se les puede enviar los parametros ```limit``` y ```offset``` a través de la query para manejar cómo llegan los datos.
+**A todos los metodos GET que devuelven un array de datos se les puede enviar los parametros ```limit``` y ```offset``` a través de la query para manejar cómo llegan los datos.**
 
-```/usuarios``` *Requiere Token
-Devuelve la lista de usuarios
-
+```/usuarios``` **Requiere Token**
+- Devuelve la lista de usuarios
+___________________________________________________________
 ```/usuarioById/```
-Devuelve el objeto usuario a partir de la Id enviada por parámetro
-
+- Devuelve el objeto usuario a partir de la Id enviada por parámetro
+___________________________________________________________
 ```/personajes```
-Devuelve los personajes disponibles para jugar
-
+- Devuelve los personajes disponibles para jugar
+___________________________________________________________
 ```/ropaByTipo/```
-Devuelve la ropa disponible según el tipo enviado por parámetro. Los tipos de ropa son "torso", "piernas" y "pies".
-
+- Devuelve la ropa disponible según el tipo enviado por parámetro. Los tipos de ropa son "torso", "piernas" y "pies".
+___________________________________________________________
 ```/ropa```
-Devuelve toda la ropa disponible
-
+- Devuelve toda la ropa disponible
+___________________________________________________________
 ```/personajesVestidos```
-Devuelve todos los personajes que tengan un autfit armado
-
+- Devuelve todos los personajes que tengan un autfit armado
+___________________________________________________________
 ```/personajesVestidosByIdUsuario/```
-Devuelve los personajes que tengan un outfit armado por el usuario al cual corresponde la Id que se envía por parámetro
-
+- Devuelve los personajes que tengan un outfit armado por el usuario al cual corresponde la Id que se envía por parámetro
+___________________________________________________________
 ```/ultimos5PersonajesVestidos```
-Devuelve los últimos 5 outfits que se armaron en todo el juego
+- Devuelve los últimos 5 outfits que se armaron en todo el juego
+___________________________________________________________
 
+## Método POST
 
-### Método POST
-
-```/personajeVestido``` *Requiere Token
+```/personajeVestido``` **Requiere Token**
 
 Se debe enviar por el body un objeto con el siguiente formato:
 ```
